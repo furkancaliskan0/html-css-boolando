@@ -1,10 +1,162 @@
-
-/* regole generali*  */
-* {
+/* regole generali */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.header, .footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/*  header */
+header{
+    background-color: rgb(248, 84, 0);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.flex-header{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-header .center-item{
+    padding: 0 15px;
+}
+
+header img{
+    width: 100px;
+}
+
+/*  main */
+main{
+    padding-top: 50px;
+}
+
+.main{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 
+.main .product{
+    margin-bottom: 30px;
+}
+
+.details img{
+    height: 400px;
+}
+
+.product .brand{
+    font-size: 10px;
+}
+
+.product .name{
+    font-size: 12px;
+    padding: 2px 0;
+}
+
+.product .prices{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.prices .discounted{
+    color: red;
+}
+
+.details{
+    position: relative;
+}
+
+.details .labels{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+.details .label{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.labels .red{
+    background-color: red;
+    
+}
+
+.labels .green{
+    background-color: green;
+}
+
+.heart{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: white;
+    padding: 5px;
+    font-size: 35px;
+}
+.heart:hover{
+    color: red;
+}
+
+.img-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.details:hover .img-hover{
+    display: block;
+}
+
+/* regole footer */
+footer{
+    background-color: black;
+    height: 48px;
+    color: white;
+}
+
+footer span{
+    font-size: 10px;
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+}
