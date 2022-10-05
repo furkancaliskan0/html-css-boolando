@@ -11,8 +11,10 @@ body{
 }
 
 .container{
+    flex: 0 0 70%;
     width: 60%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 a{
@@ -35,6 +37,7 @@ ul{
 /*  header */
 header{
     background-color: rgb(248, 84, 0);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.507);
     height: 50px;
     width: 100%;
     position: fixed;
@@ -54,23 +57,24 @@ header{
 }
 
 header img{
-    width: 100px;
+    width: 110px;
 }
 
 /*  main */
 main{
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .main{
     padding: 40px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 
 .main .product{
+    position: relative;
     margin-bottom: 30px;
 }
 
@@ -79,10 +83,12 @@ main{
 }
 
 .product .brand{
+    display: block;
     font-size: 10px;
 }
 
 .product .name{
+    display: block;
     font-size: 12px;
     padding: 2px 0;
 }
@@ -93,6 +99,7 @@ main{
 }
 
 .prices .discounted{
+    display: inline;
     color: red;
 }
 
@@ -128,7 +135,7 @@ main{
     right: 0;
     background-color: white;
     padding: 5px;
-    font-size: 35px;
+    font-size: medium;
 }
 .heart:hover{
     color: red;
